@@ -14,7 +14,7 @@ import java.sql.DriverManager;
  */
 public class Conexion {
    Connection con;
-   String url = "jdbc:mysql://localhost:3306/inventario?zeroDateTimeBehavior=convertToNull [root on Default schema]"; 
+   String url = "jdbc:mysql://localhost:3306/inventario"; 
    String user="root";
    String pass="";
    public Connection Conexion(){
@@ -22,6 +22,7 @@ public class Conexion {
            Class.forName("com.mysql.jdbc.Driver");
                    con=DriverManager.getConnection(url,user,pass);
        } catch (Exception e){
+           System.err.println("Error al establecer la conexión con la base de datos: " + e.getMessage());
        }
        return con;
    }

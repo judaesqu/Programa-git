@@ -55,7 +55,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <div class=\"container mt-4 col-lg-4\">\n");
       out.write("            <div class=\"card col-sm-10\">\n");
       out.write("                <div class=\"card-body text-center\">\n");
-      out.write("                    <form class=\"form-sign\" action=\"Validar\" method=\"POST\">\n");
+      out.write("                    <form class=\"form-sign\" action=\"validar\" method=\"POST\">\n");
       out.write("                        <div class=\"form-group text center\">\n");
       out.write("                            <h3>Login</h3>\n");
       out.write("                            <img src=\"img/logotipo.PNG\" alt=\"70\" width =\"170\"/>\n");
@@ -67,7 +67,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        </div>\n");
       out.write("                        <div class=\"form-group\">\n");
       out.write("                            <label>Password:</label>\n");
-      out.write("                            <input type=\"password\" name=\"txtpassword\" class=\"form-control\">\n");
+      out.write("                            <input type=\"password\" name=\"txtpass\" class=\"form-control\">\n");
       out.write("                        </div>\n");
       out.write("                        <input type=\"submit\" name=\"accion\" value=\"Ingresar\" class=\"btn btn-primary btn-b\">\n");
       out.write("                    </form>\n");
